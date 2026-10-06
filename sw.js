@@ -1,4 +1,4 @@
-const CACHE = "plugngo-store-v19-20261007-simple-home";
+const CACHE = "plugngo-store-v20-20261007-search-safety-undo";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
