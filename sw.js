@@ -1,4 +1,4 @@
-const CACHE = "plugngo-store-v29-20261007-product-trace";
+const CACHE = "plugngo-store-v30-20261007-simple-business-home";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
