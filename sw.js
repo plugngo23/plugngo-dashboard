@@ -1,4 +1,4 @@
-const CACHE = "plugngo-store-v37-20261008-stock-mismatch-audit";
+const CACHE = "plugngo-store-v38-20261008-history-dates";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
