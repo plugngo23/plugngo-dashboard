@@ -1,4 +1,4 @@
-const CACHE = "plugngo-store-v40-20261008-three-statuses";
+const CACHE = "plugngo-store-v42-20261009-tabby-cart-binding";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
