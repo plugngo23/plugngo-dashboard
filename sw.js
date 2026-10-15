@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v43-20261015-mobile-operations";
+const CACHE = "plugngo-shell-v44-20261016-temu-excel";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
