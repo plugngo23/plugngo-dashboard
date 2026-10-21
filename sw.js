@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v49-20261021-session-speed";
+const CACHE = "plugngo-shell-v50-20261021-imei-lookup";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
