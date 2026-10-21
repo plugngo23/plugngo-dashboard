@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v50-20261021-imei-lookup";
+const CACHE = "plugngo-shell-v51-20261021-manual-sale-price";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
