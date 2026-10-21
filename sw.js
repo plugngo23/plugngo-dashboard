@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v55-20261022-sale-order-trace";
+const CACHE = "plugngo-shell-v56-20261022-exact-imei-correction";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
