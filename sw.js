@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v57-20261022-return-source-single-link";
+const CACHE = "plugngo-shell-v58-20261022-purchase-exact-imei";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
