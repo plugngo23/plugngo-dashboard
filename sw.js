@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v59-20261022-return-accounting";
+const CACHE = "plugngo-shell-v60-20261022-refunds-out-of-sales";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
