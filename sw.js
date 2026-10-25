@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v67-20261026-no-duplicate-links";
+const CACHE = "plugngo-shell-v68-20261026-auto-retry-purchase-imei";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
