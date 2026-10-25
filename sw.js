@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v64-20261026-simple-purchase-matching";
+const CACHE = "plugngo-shell-v65-20261026-one-upload-one-save";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
