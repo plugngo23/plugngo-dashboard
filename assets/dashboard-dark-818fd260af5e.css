@@ -1,0 +1,274 @@
+/* Legacy staff panels that set their own colors need the same Dark palette
+   as the workspace. This stylesheet is loaded by the staff dashboard only. */
+html[data-dashboard-theme="dark"] .owner-dashboard {
+  --ow-raised:#1a2b38;
+  --ow-info:#a7d4f4;
+  --ow-info-soft:#1b3347;
+  --ow-control-line:#526b7d;
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard :is(input, textarea)::placeholder {
+  color:var(--ow-muted);
+  opacity:1;
+}
+
+/* Purchase from photos and manual entry share the same editor. */
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-fix-details, .purchase-full-product-editor, .purchase-payment-more,
+  .receive-check, .payment-note, .purchase-empty-match, .purchase-photo-files,
+  .purchase-detected-summary>div, .purchase-line-more-panel, .purchase-unit-row,
+  .purchase-line-grid-head, .purchase-variant-builder, .purchase-simple-phone-review article,
+  .purchase-label-results article, .purchase-phone-ready-list article
+) {
+  color:var(--ow-ink);
+  background:var(--ow-raised);
+  border-color:var(--ow-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-line-table, .purchase-line-row, .purchase-unit-assignments, .purchase-review-orders label,
+  .purchase-match-details, .purchase-result-summary>div, .purchase-label-flow>div,
+  .invoice-catalog-results, .invoice-catalog-search, .sticky-actions
+) {
+  color:var(--ow-ink);
+  background:var(--ow-paper);
+  border-color:var(--ow-line);
+}
+
+/* The original linker gradient uses !important, so override it explicitly. */
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal .purchase-label-linker {
+  background:var(--ow-paper)!important;
+  border-color:var(--ow-line)!important;
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-label-picker, .purchase-label-notice, .purchase-label-step,
+  .purchase-label-flow b, .purchase-result-summary .done b, .purchase-review-check,
+  .purchase-unit-stock, .purchase-unit-linked, .purchase-label-results article.deducted,
+  .purchase-label-results article.deducted>span, .purchase-variant-reviews>label.confirmed
+) {
+  background:var(--ow-green-soft);
+  color:var(--ow-green)!important;
+  border-color:var(--ow-green);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-match-details.variant, .purchase-match-details.ignored, .purchase-unit-photo-link,
+  .purchase-label-results article.check, .purchase-label-results article.check>span,
+  .purchase-variant-reviews>label.pending, .payment-note.credit, .purchase-draft-limit
+) {
+  background:var(--ow-gold-soft);
+  color:var(--ow-gold)!important;
+  border-color:var(--ow-gold);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .invoice-scan-status, .device-photo-selection, .invoice-catalog-selected,
+  .invoice-catalog-selected>span, .purchase-unit-heading>span, .purchase-line-more-title>span,
+  .purchase-label-results article.ready, .purchase-label-results article.ready>span,
+  .purchase-result-summary .save b, .purchase-phone-ready-list article>span
+) {
+  background:var(--ow-info-soft);
+  color:var(--ow-info);
+  border-color:var(--ow-control-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-save-blockers, .purchase-save-error, .purchase-line-row-actions .line-icon.danger
+) {
+  background:var(--ow-danger-soft);
+  color:var(--ow-danger);
+  border-color:var(--ow-danger);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .modal-title .close, .purchase-add-row, .purchase-line-row-actions button:not(.danger):not(.selected),
+  .device-photo-selection button, .photo-count, .invoice-catalog-search button, .invoice-catalog-selected button
+) {
+  background:var(--ow-paper);
+  color:var(--ow-ink);
+  border-color:var(--ow-control-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-fix-details>summary, .purchase-product-editor-toggle, .purchase-payment-more summary,
+  .purchase-variant-builder summary, .purchase-variant-actions span, .invoice-total strong,
+  .invoice-scan-status strong, .device-photo-selection strong, .invoice-catalog-results>button strong,
+  .purchase-label-results article.ready>b, .purchase-phone-ready-list article>b
+) {
+  color:var(--ow-info);
+  border-color:var(--ow-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-product-editor-toggle:hover, .purchase-add-row:hover, .modal-title .close:hover,
+  .invoice-catalog-results>button:hover, .invoice-catalog-results>button:focus-visible,
+  .invoice-catalog-results>button[aria-selected="true"], .purchase-result-summary .ignored b
+) {
+  background:var(--ow-raised);
+  color:var(--ow-ink);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-review-phone strong, .purchase-review-amount, .purchase-line-amount, .purchase-unit-number b,
+  .purchase-unit-heading strong, .purchase-line-more-title strong, .purchase-simple-product-heading strong,
+  .purchase-detected-summary strong, .purchase-label-results article strong, .purchase-phone-ready-list strong,
+  .invoice-catalog-selected strong, .invoice-catalog-results>button, .imei-photo-upload strong
+) {
+  color:var(--ow-ink);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .modal-title small, .invoice-section-title .muted, .invoice-total span, .invoice-upload small,
+  .receive-check small, .purchase-label-safety, .purchase-label-results article small, .purchase-result-summary small,
+  .purchase-save-help, .purchase-simple-save-summary, .purchase-review-phone small, .purchase-phone-ready-list small,
+  .purchase-detected-summary span, .purchase-simple-product-heading small, .purchase-line-more-title small,
+  .purchase-line-more-panel label>small, .purchase-unit-heading small, .purchase-unit-number small,
+  .purchase-unit-sku small, .purchase-unit-assignments>p, .device-photo-selection span,
+  .invoice-catalog-selected small, .invoice-catalog-results>button small, .invoice-catalog-results>p,
+  .purchase-variant-builder>p
+) {
+  color:var(--ow-muted);
+  border-color:var(--ow-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-label-picker small, .purchase-review-orders small, .purchase-unit-stock b, .purchase-unit-stock small,
+  .purchase-unit-linked b, .purchase-unit-linked small, .purchase-label-results article.deducted>b
+) {color:var(--ow-green)}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-unit-photo-link b, .purchase-unit-photo-link small, .purchase-unit-photo-link>p,
+  .purchase-match-details.variant>summary, .purchase-match-details.ignored>summary, .purchase-label-results article.check>b
+) {color:var(--ow-gold);border-color:var(--ow-gold)}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  .purchase-line-item, .purchase-simple-product-heading, .invoice-catalog-results>button
+) {border-color:var(--ow-line)}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .purchase-invoice-modal :is(
+  input:not([type="checkbox"]):not([type="file"]), select, textarea
+) {border-color:var(--ow-control-line)}
+
+/* Shared navigation states, table messages and secondary text. */
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .toolbar p, .empty, .books-start-note, .evening-stock-indicator .eyebrow, .books-cash-flow .books-payment-legend span,
+  .inbox-filters button:not(.filter-active), .empty-thread, .chat-empty, .chat-placeholder,
+  .support-placeholder, .report-metrics small, .report-heading p, .channel-row div span,
+  .supplier-account-list small, .supplier-metrics small, .repair-metrics small, .books-finance-totals span,
+  .request-flow>b, .report-loading, .dispatch-flow span:not(.active):not(.done), .period-tabs button:not(.active-period)
+) {color:var(--ow-muted)}
+
+html[data-dashboard-theme="dark"] .owner-dashboard .books-widget>header button {color:var(--ow-info)}
+html[data-dashboard-theme="dark"] .owner-dashboard .whatsapp-home-title>span {
+  background:var(--ow-green-soft);
+  color:var(--ow-green);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard :is(.easy-tabs button.active, .dispatch-flow span.active b) {
+  background:var(--ow-info-soft);
+  color:var(--ow-info);
+  border-color:var(--ow-control-line);
+}
+
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .books-submission-summary, .sales-device-match-guide, .daily-stock-safety, .photo-match-safety, .dispatch-boundary-guide
+) {
+  background:var(--ow-green-soft);
+  color:var(--ow-green);
+  border-color:var(--ow-green);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .sales-device-match-guide span, .daily-stock-safety span, .photo-match-safety span, .dispatch-boundary-guide span,
+  .purchase-order-photo-matcher>summary>b, .daily-stock-dispatch>summary>b,
+  .photo-match-results .photo-match-linked, .daily-stock-picker em, .photo-match-upload-card em
+) {color:var(--ow-green)}
+
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-one-upload, .photo-match-upload-card, .photo-match-manual-split, .photo-match-daily-steps,
+  .photo-match-results article, .photo-match-metrics>div, .photo-match-review-line, .photo-match-review-confirm,
+  .photo-match-review-invoice>div, .photo-match-payment, .photo-match-payment button,
+  .daily-stock-picker, .daily-stock-metrics>div, .daily-stock-results article, .dispatch-manual-tools,
+  .unified-source-modal :is(.source-link-guide,.order-stock-picker,.order-stock-results>button,.order-stock-filters button),
+  .order-stock-identifier-form
+) {
+  color:var(--ow-ink);
+  background:var(--ow-paper);
+  border-color:var(--ow-line);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-metrics strong, .daily-stock-metrics strong, .photo-match-payment legend, .photo-match-results code,
+  .photo-match-help>summary
+) {color:var(--ow-ink)}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-upload-card small, .photo-match-one-upload small, .photo-match-metrics span,
+  .photo-match-results article>small, .photo-match-review header small, .photo-match-payment button small,
+  .photo-match-daily-steps small, .purchase-order-photo-matcher>summary small, .daily-stock-dispatch>summary small,
+  .daily-stock-picker small, .daily-stock-metrics span, .daily-stock-results small, .daily-stock-results p,
+  .dispatch-recent-cards small, .dispatch-recent-cards p, .dispatch-photo-tip, .source-link-guide span,
+  .order-stock-identifier-form>div:first-child span,
+  .unified-source-modal :is(.order-stock-picker-head span,.order-stock-actions small,.order-stock-linked small,
+    .order-stock-results small,.order-stock-identifiers,.order-stock-empty)
+) {color:var(--ow-muted)}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-picker-row .photo-match-pick-main, .daily-stock-picker label:not(.secondary), label.dispatch-capture-button
+) {
+  color:var(--ow-on-navy);
+  background:var(--ow-navy);
+  border-color:var(--ow-control-line);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(.photo-match-picker-row label+label, .daily-stock-picker label.secondary) {
+  color:var(--ow-ink);
+  background:var(--ow-raised);
+  border-color:var(--ow-control-line);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(.photo-match-manual-split, .dispatch-manual-tools)>summary {
+  color:var(--ow-info);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .order-status-tabs button.active, .sales-channel-tabs button.active, .device-link-tabs button.active,
+  .photo-match-review, .photo-match-check, .daily-stock-check, .daily-stock-review,
+  .sales-warning-list b, .stock-link-badges .unlinked, .unified-source-modal .order-stock-link-status .unlinked,
+  .unified-source-modal .order-stock-correction-note, .return-match-banner.review, .staff-return-queue.has-items,
+  .unified-source-modal :is(.order-stock-filters button.selected,.order-stock-results>button:hover,.order-stock-results>button.selected)
+) {
+  background:var(--ow-gold-soft);
+  color:var(--ow-gold);
+  border-color:var(--ow-gold);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(.stock-source-add) {
+  background:var(--ow-gold-soft)!important;
+  color:var(--ow-gold)!important;
+  border-color:var(--ow-gold)!important;
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-ready,.photo-match-submitted,.photo-match-review-success,.photo-match-review-device>span,
+  .daily-stock-ready,.daily-stock-linked,.stock-link-badges .linked,.return-match-banner.confirmed,
+  .unified-source-modal :is(.order-stock-linked article,.order-stock-link-status .linked,.order-stock-source-confirmed)
+) {
+  background:var(--ow-green-soft);
+  color:var(--ow-green);
+  border-color:var(--ow-green);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-stock-note,.photo-match-results .photo-match-unlinked,.photo-match-review-total,
+  .photo-match-payment button.is-active,.daily-stock-waiting,.daily-stock-saving,.stock-simple-tabs button.active,
+  .order-stock-add-identifier
+) {
+  background:var(--ow-info-soft);
+  color:var(--ow-info);
+  border-color:var(--ow-control-line);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .photo-match-failed,.photo-match-review-error,.daily-stock-failed,.stock-source-cell.negative,.sales-warning-list b:last-child
+) {
+  background:var(--ow-danger-soft);
+  color:var(--ow-danger);
+  border-color:var(--ow-danger);
+}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .stock-source-alert strong,.stock-source-cell.negative strong,.stock-source-cell.negative small
+) {color:var(--ow-danger)}
+html[data-dashboard-theme="dark"] .owner-dashboard :is(
+  .stock-source-cell.purchase strong,.photo-match-review-line>b,.unified-source-modal .order-stock-correct
+) {color:var(--ow-gold)}
