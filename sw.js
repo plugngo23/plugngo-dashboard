@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v76-20261105-disclosure-controls";
+const CACHE = "plugngo-shell-v77-20261105-disclosure-controls";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
