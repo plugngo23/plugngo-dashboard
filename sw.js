@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v74-20261105-owner-overview";
+const CACHE = "plugngo-shell-v75-20261105-home-calendar";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
