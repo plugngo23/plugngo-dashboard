@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v78-20261106-dark-mode";
+const CACHE = "plugngo-shell-v79-20261106-awaiting-return";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
