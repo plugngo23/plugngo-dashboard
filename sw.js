@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v79-20261106-awaiting-return";
+const CACHE = "plugngo-shell-v80-20261108-duplicate-stock";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
