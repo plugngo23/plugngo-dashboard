@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v84-20261109-purchase-confirmation";
+const CACHE = "plugngo-shell-v85-20261109-photo-recovery";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
