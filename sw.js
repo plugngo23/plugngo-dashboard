@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v81-20261109-purchase-reliability";
+const CACHE = "plugngo-shell-v82-20261109-home-loading";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
