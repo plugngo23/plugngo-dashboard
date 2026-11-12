@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v89-20261111-label-scanner-fallback";
+const CACHE = "plugngo-shell-v90-20261112-wrong-item-cases";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
