@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v90-20261112-wrong-item-cases";
+const CACHE = "plugngo-shell-v91-20261113-multi-phone-orders";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
