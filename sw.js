@@ -1,4 +1,4 @@
-const CACHE = "plugngo-shell-v92-20261114-payment-clarity";
+const CACHE = "plugngo-shell-v93-20261114-customer-message";
 const SHELL = ["/", "/index.html", "/manifest.webmanifest", "/manifest-dashboard.webmanifest", "/plugngo-icon-192.png", "/plugngo-icon-512.png"];
 
 self.addEventListener("install", (event) => {
